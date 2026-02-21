@@ -9,8 +9,11 @@ export default function Contact() {
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-circle-forest mt-2 mb-4 leading-tight">
             Contact Circle Rice
           </h2>
-          <p className="text-circle-stone/90 text-lg">
+          <p className="text-circle-stone/90 text-lg mb-2">
             For local orders, export enquiries, or partnership opportunities—we&apos;d love to hear from you.
+          </p>
+          <p className="text-circle-stone/70 text-sm font-medium">
+            Dealers and customers: we respond quickly and work with you professionally.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">

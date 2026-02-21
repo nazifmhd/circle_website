@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Circle Rice | Premium Rice Mill & Global Export',
@@ -24,7 +26,11 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased text-circle-stone bg-circle-cream">
-        {children}
+        <header className="fixed top-0 left-0 right-0 z-50 w-full">
+          <Navbar />
+        </header>
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

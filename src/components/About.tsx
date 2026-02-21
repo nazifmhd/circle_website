@@ -1,12 +1,5 @@
 import Link from 'next/link';
 
-const highlights = [
-  { text: 'Premium raw material selection' },
-  { text: 'World-class milling technology' },
-  { text: 'Rigorous quality assurance' },
-  { text: 'Ready for local & export markets' },
-];
-
 export default function About() {
   return (
     <section id="about" className="section-padding bg-white">
@@ -14,32 +7,25 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
           <div>
             <span className="font-display text-circle-gold text-sm md:text-base tracking-[0.2em] uppercase font-medium">
-              About Us
+              Welcome to Circle Rice
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-circle-forest mt-2 mb-6 leading-tight">
-              Welcome to Circle Rice
+              From Paddy Fields to Your Table
             </h2>
             <p className="text-circle-stone/90 text-lg leading-relaxed mb-4">
-              We are a modern rice mill built on tradition and technology. We accept only the best raw rice and use the latest technology in the world for the milling process.
+              Circle Rice has been a trusted name in Sri Lanka&apos;s rice industry. Our commitment extends beyond production—we work hand in hand with local farmers, supporting them with resources, technology, and fair trade practices.
+            </p>
+            <p className="text-circle-stone/90 text-lg leading-relaxed mb-4">
+              Our distribution network ensures that premium-quality rice reaches every corner of the island, making us a top choice for dealers and households. Beyond borders, we are expanding into international markets, delivering the authentic taste of Sri Lankan rice to the world.
             </p>
             <p className="text-circle-stone/90 text-lg leading-relaxed mb-8">
-              From our facility to your table, we maintain strict quality control at every step. Our commitment to excellence has made us a trusted name for local distribution—and we are expanding to serve international markets through reliable export partnerships.
+              At Circle Rice, we take pride in preserving tradition while embracing innovation, ensuring that every grain carries the essence of quality and trust.
             </p>
-            <ul className="space-y-3 mb-8">
-              {highlights.map((item) => (
-                <li key={item.text} className="flex items-center gap-3">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-circle-gold/15 flex items-center justify-center">
-                    <span className="w-2 h-2 rounded-full bg-circle-gold" />
-                  </span>
-                  <span className="text-circle-stone font-medium">{item.text}</span>
-                </li>
-              ))}
-            </ul>
             <Link
               href="#products"
-              className="inline-flex items-center gap-2 text-circle-gold font-semibold hover:gap-3 transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-circle-forest text-white font-semibold rounded-md hover:bg-circle-stone transition-colors"
             >
-              View our products
+              Our Products
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -57,7 +43,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 rounded-xl bg-circle-gold/10 border border-circle-gold/20 hidden lg:block" aria-hidden />
           </div>
         </div>
       </div>

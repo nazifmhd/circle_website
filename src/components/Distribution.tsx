@@ -6,11 +6,14 @@ export default function Distribution() {
       <div className="absolute inset-0 bg-circle-forest" />
       <div className="absolute inset-0 bg-white/[0.03]" />
       <div className="relative z-10 container-wide px-6 md:px-12 lg:px-20 text-center">
+        <p className="font-display text-circle-gold text-sm md:text-base tracking-[0.2em] uppercase font-medium mb-3">
+          Our reach
+        </p>
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4">
           Island Wide Distribution
         </h2>
         <p className="text-circle-wheat/90 text-lg max-w-2xl mx-auto mb-10">
-          Trusted across the island for quality rice. We deliver to retailers, wholesalers, and institutions. Export partnerships welcome.
+          Trusted across the island by retailers, wholesalers, and institutions. One source for quality rice. Export partnerships welcome.
         </p>
         <Link
           href="#contact"

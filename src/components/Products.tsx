@@ -16,13 +16,13 @@ export default function Products() {
       <div className="container-wide">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="font-display text-circle-gold text-sm md:text-base tracking-[0.2em] uppercase font-medium">
-            Our Range
+            Finest Rice, Unmatched Quality
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-circle-forest mt-2 mb-4 leading-tight">
-            Products of Circle
+            Premium, Export-Grade Rice for Every Home & Business
           </h2>
           <p className="text-circle-stone/90 text-lg">
-            A large range of premium-grade rice. From aromatic samba to nutritious red and raw varieties—each meets our high standards for quality and taste.
+            Experience the finest export-quality rice, carefully processed to meet the highest standards of taste, nutrition, and purity. From aromatic samba to nutritious red and raw varieties—loved by families and businesses locally and internationally.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -31,8 +31,11 @@ export default function Products() {
               key={product.name}
               className="group bg-white rounded-xl p-6 md:p-8 shadow-sm border border-circle-wheat/50 hover:shadow-circle hover:border-circle-gold/20 transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-circle-cream to-circle-wheat/30 mb-5 flex items-center justify-center group-hover:from-circle-gold/5 group-hover:to-circle-gold/10 transition-colors">
+              <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-circle-cream to-circle-wheat/30 mb-5 flex items-center justify-center group-hover:from-circle-gold/5 group-hover:to-circle-gold/10 transition-colors relative overflow-hidden">
                 <span className="font-display text-4xl text-circle-gold/40 group-hover:text-circle-gold/60 transition-colors">◉</span>
+                <span className="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-circle-forest/90 text-white text-xs font-semibold">
+                  Premium grade
+                </span>
               </div>
               <h3 className="font-display text-xl md:text-2xl font-semibold text-circle-forest mb-2">
                 {product.name}

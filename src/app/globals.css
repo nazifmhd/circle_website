@@ -8,6 +8,11 @@
     --font-cormorant: 'Cormorant Garamond', Georgia, serif;
     --font-source-sans: 'Source Sans 3', system-ui, sans-serif;
   }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .animate-fade-in { animation: none; }
+    .animate-fade-in-up { animation: none; }
+  }
 }
 
 @layer components {
@@ -19,5 +24,27 @@
   }
   .container-wide {
     @apply max-w-7xl mx-auto;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.7s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

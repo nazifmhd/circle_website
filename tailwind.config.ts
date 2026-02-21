@@ -26,6 +26,10 @@ const config: Config = {
         'circle': '0 4px 24px -4px rgba(45, 80, 22, 0.12), 0 8px 32px -8px rgba(45, 80, 22, 0.08)',
         'circle-lg': '0 12px 40px -8px rgba(45, 80, 22, 0.15), 0 24px 64px -16px rgba(45, 80, 22, 0.1)',
       },
+      animation: {
+        'fade-in': 'fadeIn 0.8s ease-out forwards',
+        'fade-in-up': 'fadeInUp 0.7s ease-out forwards',
+      },
     },
   },
   plugins: [],

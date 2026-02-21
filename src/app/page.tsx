@@ -1,29 +1,24 @@
-import Navbar from '@/components/Navbar';
+import Link from 'next/link';
 import Hero from '@/components/Hero';
-import StatsStrip from '@/components/StatsStrip';
-import About from '@/components/About';
-import Products from '@/components/Products';
-import Distribution from '@/components/Distribution';
-import Export from '@/components/Export';
-import HealthBenefits from '@/components/HealthBenefits';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import StorySections from '@/components/StorySections';
+import Excellence from '@/components/Excellence';
+import AboutTeaser from '@/components/AboutTeaser';
+import OurProcess from '@/components/OurProcess';
+import ProductsPreview from '@/components/ProductsPreview';
+import OurValues from '@/components/OurValues';
+import ContactCTA from '@/components/ContactCTA';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
-      <Navbar />
-      <main>
-        <Hero />
-        <StatsStrip />
-        <About />
-        <Products />
-        <Distribution />
-        <Export />
-        <HealthBenefits />
-        <Contact />
-        <Footer />
-      </main>
+      <Hero />
+      <StorySections />
+      <Excellence />
+      <AboutTeaser />
+      <OurProcess />
+      <ProductsPreview />
+      <OurValues />
+      <ContactCTA />
     </>
   );
 }
